@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="script.js"></script>
+    <title>Patty’s Flowers</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.6.3/css/all.css' integrity='sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/' crossorigin='anonymous'>
+  </head>
+
+
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="#home" class="w3-bar-item w3-button"><i class="fas fa-home"></i> HOME</a>
+    <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT ME</a>
+    <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fas fa-pen-fancy"></i> HOW YOU CAN HELP</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fas fa-hourglass-half"></i> TIME LEFT</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+      <i class="fa fa-search"></i>
+    </a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT ME</a>
+    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">HOW YOU CAN HELP</a>
+    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">TIME LEFT</a>
+    <a href="#" class="w3-bar-item w3-button">SEARCH</a>
+  </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">PATTY'S <span class="w3-hide-small"></span> FLOWERS</span>
+  </div>
+</div>
+
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+  <h3 class="w3-center">ABOUT ME</h3>
+  <p class="w3-center"><em>What started the tradition</em></p>
+  <p>Hello everyone, my name is Patrick Milligan. Growing up I had an affinity for superheroes and fell in love with helping others. I always wanted to be the person that people can rely on and know that they can go to. After high school, I made a promise to myself that I was going to hold these values even closer to my heart and change the world with these values. When I finally got to UTA I got as involved as possible to immerse myself into the student body. Following my first semester, I saw that the university didn't have anything planned for the students for Valentine's Day, so I jumped into action! I quickly got onto all of my social media and did my best to raise some money for flowers. I was only able to raise about $50, so I used my own money to help purchase about 400 flowers. From 8am to 3pm, I handed out all the flowers on Valentine's Day. 
+
+</p>
+  <div class="w3-row">
+    <div class="w3-col m6 w3-center w3-padding-large">
+      <p><b><i class="fa fa-user w3-margin-right"></i>Patrick Milligan</b></p><br>
+      <img src="Patty.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="500" height="333">
+    </div>
+
+    <!-- Hide this text on small devices -->
+    <div class="w3-col m6 w3-hide-small w3-padding-large">
+      <p>This year I'm getting a head start; my goal is to raise about $500 (if not more) for flowers for this upcoming Valentine's Day (Hopefully by Feb. 10th). Whatever is leftover from the money for the flowers, I am going to donate to the fraternity on my campus, Beta Theta Pi, in honor of their international philanthropy (they dress up as superheroes for kids in hospitals!). I can't explain how much this would mean to me; people ask me, "Patty, why do you do things like this?" All I can say is this: you never know who is having a bad day, if you have the power to make someone's day you should act on it. Having super powers or a super suit doesn't make you a superhero, doing something "because its the right thing to do, is indeed without a doubt [what makes] a real superhero." (-Stan Lee)</p>
+    </div>
+  </div>
+
+   <h3 id="portfolio" class="w3-center">HOW YOU CAN HELP</h3>
+  <button class="button button4" onclick="window.location.href = 'https://www.gofundme.com/pattys-flowers';">DONATE</button>
+  <button class="button button4" id="myBtn">SPONSOR</button>
+  <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>Some text in the Modal..</p>
+      </div>
+
+    </div>
+  <button class="button button4">VOLENTEER</button>
+
+<!-- Display the countdown timer in an element -->
+<h3 id="contact" class="w3-center">TIME LEFT TO HELP </h3>
+<h3 <element class="demo" id="demo"></h3>
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Feb 14, 2019 08:30:25").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get todays date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+
+  // If the count down is finished, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+
+<!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 5</div>
+    <img src="slide1.JPG" style="width:100%">
+    <div class="text">Caption Text</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 5</div>
+    <img src="slide2.JPG" style="width:100%">
+    <div class="text">Caption Two</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 5</div>
+    <img src="slide3.jpg" style="width:100%">
+    <div class="text">Caption Three</div>
+  </div>
+
+    <div class="mySlides fade">
+    <div class="numbertext">4 / 5</div>
+    <img src="slide4.JPG" style="width:100%">
+    <div class="text">Caption Three</div>
+  </div>
+
+    <div class="mySlides fade">
+    <div class="numbertext">5 / 5</div>
+    <img src="slide 5.JPG" style="width:100%">
+    <div class="text">Caption Three</div>
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+</div>
+
+
+
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-on">
+  <div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+  </div>
+  <p>Powered by <a href="https://normedorconsultation.ga/" title="NORME D'OR CONSULTING" target="_blank" class="w3-hover-text-green">NORME D'OR CONSULTING</a></p>
+</footer>
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+
+
+</body>
+</html>
+
+  </body>
+</html>
