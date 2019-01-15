@@ -1,7 +1,6 @@
-h9{
+.h9{
   border-image-source: url(rose colmn.jpg);
-  border-width: 0 0 100px;
-  border-top:none;
+  border-width:200px;
   border-top:none;
   border-bottom:none;
 }
