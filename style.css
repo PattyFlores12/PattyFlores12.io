@@ -1,20 +1,11 @@
-img.sticky {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  width: 200px;
-  float: left; 
-  height: 50%;
+h9{
+  border-image-source: url(rose colmn.jpg);
+  border-width: 0 0 100px;
+  border-top:none;
+  border-top:none;
+  border-bottom:none;
 }
 
-img.sticky2 {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  width: 200px;
-  float: right; 
-  height: 50%;
-}
 
 * {box-sizing:border-box}
 
